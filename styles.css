@@ -5,9 +5,16 @@ body {
 * {
   margin: 0;
 }
-
-/* Header */
-header {
+.btn-primary {
+  border-radius: 41px;
+  background: #e02c6d;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
 }
 
 /* Navbar */
@@ -15,7 +22,7 @@ header {
   display: flex;
   max-width: 1200px;
   margin: 50px auto;
-  padding: 0 10px;
+  padding: 0 5vw;
   justify-content: space-between;
 }
 
@@ -51,7 +58,61 @@ header {
   max-width: 36px;
 }
 
-@media (max-width: 568px) {
+/* banner */
+
+.banner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner_detail {
+  max-width: 50%;
+}
+
+.banner_detail h2 {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.banner_detail p {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.banner_img img {
+  max-width: 85%;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner_detail {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .banner_img img {
+    max-width: 100%;
+  }
+
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
   .bar3 {
     display: block;
   }
