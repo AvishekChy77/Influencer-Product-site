@@ -92,6 +92,114 @@ body {
   max-width: 85%;
 }
 
+/* e-commerce site */
+
+.ecommerce-site {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.ecommerce-site-logo {
+  color: #d20100;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ecommerce-site-logo img {
+  max-width: 7rem;
+}
+
+/* card section */
+.card-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.card-section-title {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+.card figure {
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.card figure img {
+  max-width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.card-content h2 {
+  color: #18191f;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.card-content h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-content p,
+.card-content div {
+  color: #787885;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.252px;
+}
+
+.card-more {
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+.card-more svg {
+  margin-left: 0.5rem;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   .banner {
@@ -110,6 +218,13 @@ body {
   html {
     font-size: 13px;
   }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-more {
+    padding-right: 4rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -125,5 +240,22 @@ body {
 
   .nav {
     padding: 0px;
+  }
+
+  .ecommerce-site {
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 60px;
+  }
+  .row-1 {
+    grid-column: span 3;
+    /* justify-self: center; */
+  }
+  .row-2 {
+    grid-column: span 4;
+    justify-self: center;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
